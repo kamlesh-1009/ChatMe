@@ -1,4 +1,4 @@
-package com.example.chat_me
+package com.chatme.arqonics
 
 import io.flutter.embedding.android.FlutterActivity
 

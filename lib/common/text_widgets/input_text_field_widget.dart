@@ -3,7 +3,6 @@
 import 'package:chat_me/constant/app_colors.dart';
 import 'package:chat_me/constant/app_style.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -36,7 +35,7 @@ Widget searchTextFormField(BuildContext context,
 
 class EmailWidget extends StatelessWidget {
   const EmailWidget({
-    Key? key,
+    super.key,
     this.fieldKey,
     this.hintText,
     this.style,
@@ -50,7 +49,7 @@ class EmailWidget extends StatelessWidget {
     this.enabled,
     this.focusNode,
     this.validator,
-  }) : super(key: key);
+  });
   final Key? fieldKey;
   final String? hintText;
   final TextStyle? style;
@@ -102,7 +101,7 @@ class PasswordWidget extends StatefulWidget {
   final TextInputAction? textInputAction;
 
   const PasswordWidget({
-    Key? key,
+    super.key,
     required this.controller,
     this.fieldKey,
     this.maxLength,
@@ -110,7 +109,7 @@ class PasswordWidget extends StatefulWidget {
     this.validator,
     this.focusNode,
     this.textInputAction,
-  }) : super(key: key);
+  });
 
   @override
   _PasswordWidgetState createState() => _PasswordWidgetState();
@@ -152,7 +151,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
 
 class NumberWidget extends StatelessWidget {
   const NumberWidget({
-    Key? key,
+    super.key,
     this.fieldKey,
     this.hintText,
     this.validator,
@@ -170,7 +169,7 @@ class NumberWidget extends StatelessWidget {
     this.borderColor,
     this.fillColor,
     this.enabled,
-  }) : super(key: key);
+  });
 
   final Key? fieldKey;
   final String? hintText;

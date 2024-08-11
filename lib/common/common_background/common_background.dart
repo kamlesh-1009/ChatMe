@@ -7,8 +7,13 @@ class CommonBackground extends StatelessWidget {
   final String title;
   final bool isLeading;
   final Widget? child;
+  final Widget? floatingChild;
   const CommonBackground(
-      {super.key, required this.title, this.isLeading = true, this.child});
+      {super.key,
+      required this.title,
+      this.isLeading = true,
+      this.child,
+      this.floatingChild});
 
   @override
 
@@ -22,6 +27,7 @@ class CommonBackground extends StatelessWidget {
   /// The [child] parameter is the widget to be displayed inside the body container.
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: floatingChild,
       // Set the background color of the scaffold.
       backgroundColor: appPrimaryColor,
 
@@ -63,6 +69,11 @@ class CommonBackground extends StatelessWidget {
             .size
             .height, // Set the height of the container.
         decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/png/background.png"),
+            opacity: 0.2,
+            fit: BoxFit.cover,
+          ),
           borderRadius: BorderRadius.vertical(
             top: Radius.circular(
                 30), // Set the top border radius of the container.

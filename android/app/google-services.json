@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "106654082480",
+    "firebase_url": "https://chatme-49a0e-default-rtdb.firebaseio.com",
+    "project_id": "chatme-49a0e",
+    "storage_bucket": "chatme-49a0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106654082480:android:637c745fcb445136992275",
+        "android_client_info": {
+          "package_name": "com.chatme.arqonics"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0LDtnMuaL2NmujsGKLp3o-olRaSKCpC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
